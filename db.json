@@ -1,0 +1,26 @@
+{
+  "card": [
+    {
+      "image": "img/iphone.jpeg",
+      "subtitle": "Смартфон Apple iPhone 12 128Gb Starlight",
+      "total": "25"
+    },
+    {
+      "image": "img/iwatch.jpeg",
+      "subtitle": "Смарт-часы Apple Watch Series 6",
+      "total": "30"
+    },
+    {
+      "image": "img/macbook.jpeg",
+      "subtitle": "Ноутбук APPLE MacBook Pro 13 M1 16/250gb",
+      "total": "40"
+    }
+  ],
+  "requests": [
+    {
+      "name": "e",
+      "phone": "er",
+      "id": 1
+    }
+  ]
+}
