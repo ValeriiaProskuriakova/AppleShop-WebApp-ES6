@@ -15,6 +15,11 @@ function tabs(tabsParentSelector,tabsSelector,tabsContentSelector){
         })
 
     }
+    function removeClasses () {
+        btn.forEach(item => {
+            item.classList.remove('tabheader__item_active')
+        })
+    }
     close()
     open()
 
@@ -25,6 +30,8 @@ function tabs(tabsParentSelector,tabsSelector,tabsContentSelector){
                 if(e.target === item) {
                     close()
                     open(i)//значеніе кот передаем в параметр приоритетнее чем то кот вписанное в ф-цию
+                    removeClasses()
+                    item.classList.add('tabheader__item_active')
                 }
             })
         }

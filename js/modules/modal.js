@@ -16,20 +16,20 @@ function openModal(modalSelector,modalTimerId) {
 
 }
 function modal(triggerSelector,modalSelector,crossSelector,modalTimerId){
-    let btnWhite = document.querySelector(triggerSelector);
+    let btnWhite = document.getElementsByClassName(triggerSelector);
     let modal = document.querySelector(modalSelector);
     let cross = document.querySelector(crossSelector)
 
 //через функции опен kлоуз также как сверху! чтоб не повторять!!
+// why HTML collection is not iterable ?? btn_white are not visible
 
-
-
-
-    btnWhite.addEventListener('click', () => {
-        openModal(modalSelector,modalTimerId) // через класслист! потому что style добавляет инлайновый стиль
-    })
-
-
+    Array.from(btnWhite).forEach(function(item) {
+        item.addEventListener('click', () => {
+            console.log(item)
+            openModal(modalSelector,modalTimerId) // через класслист! потому что style добавляет инлайновый стиль
+        })
+     });
+    
     cross.addEventListener('click', () => {
         closeModal(modalSelector)
     })
@@ -46,9 +46,6 @@ function modal(triggerSelector,modalSelector,crossSelector,modalTimerId){
 
     })
 
-
-
-
     function ShowModalByScroll(){
         if(document.documentElement.scrollTop + document.documentElement.clientHeight === document.documentElement.scrollHeight)
         {
@@ -56,7 +53,6 @@ function modal(triggerSelector,modalSelector,crossSelector,modalTimerId){
             window.removeEventListener('scroll',ShowModalByScroll)
         }
     }
-
 
     window.addEventListener('scroll', ShowModalByScroll)
 

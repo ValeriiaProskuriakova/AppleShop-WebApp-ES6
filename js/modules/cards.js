@@ -21,15 +21,15 @@ function cards(){
             }else{
                 this.classes.forEach(className => elem.classList.add(className));
             }
-            elem.innerHTML = `<div style="color:red;">Акция</div>
+            elem.innerHTML = `<div style="color:red;">Акція</div>
                         <img src="${this.image}">
                         <h3 class="menu__item-subtitle">${this.subtitle}</h3>
                         <div class="menu__item-price">
-                        <div class="menu__item-cost">Цена:</div>
+                        <div class="menu__item-cost">Ціна:</div>
                         <div class="menu__item-total"><span>${this.total}</span> грн</div>
                       </div>
                       <div class="header__right-block">
-                        <button class="btn btn_white" onclick="openModal()" style="margin:auto">Купить</button>
+                        <button class="btn btn_white"  style="margin:auto">Купити</button>
                       </div>`
             this.parentSelector.append(elem)
         }

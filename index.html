@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет магазин</title>
+    <title>Інтернет магазин</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,14 +13,14 @@
                 <img src="icons/apple.png" style="width:125px;height:125px" alt="Логотип">
             </div>
             <nav class="header__links">
-                <a href="#tab-1" class="header__link">О нас</a>
-                <a href="#tab-2" class="header__link">Продукция</a>
-                <a href="#tab-3" class="header__link">Цены</a>
-                <a href="#tab-4" class="header__link">Отзывы</a>
+                <a href="#tab-1" class="header__link">Про нас</a>
+                <a href="#tab-2" class="header__link">Продукція</a>
+                <a href="#tab-3" class="header__link">Ціни</a>
+                <a href="#tab-4" class="header__link">Відгуки</a>
             </nav>
         </div>
         <div class="header__right-block">
-            <button class="btn btn_white">Заявка на покупку</button>
+            <button class="btn btn_white">Запит на дзвінок</button>
         </div>
     </header>
 
@@ -38,29 +38,27 @@
                     </div>
                 </div>
                 <div class="tabcontent">
-                    <img src="img/tabs/iphone.png" alt="iphone">
+                    <a href="https://www.apple.com/shop/buy-iphone/iphone-12" target="_blank"><img src="img/tabs/iphone.png" alt="iphone"></a>
                     <div class="tabcontent__descr">
                         A14 Bionic — найшвидший процесор iPhone.
                         Дисплей OLED на всю передню панель. Ceramic Shield у 4 рази краще захищає від пошкоджень у разі падіння. І Нічний режим на всіх камерах. Усе це — в двох ідеальних розмірах iPhone 12.
                     </div>
                 </div>
                 <div class="tabcontent">
-                    <img src="img/tabs/ipad.png" alt="ipad">
+                    <a href="https://www.apple.com/us-edu/shop/buy-ipad/ipad-pro" target="_blank"><img src="img/tabs/ipad.png" alt="ipad"></a>
                     <div class="tabcontent__descr">
                         Все в найдосконалішому вигляді. Неймовірна продуктивність чипа M1, незрівнянний дисплей XDR і надшвидкий бездротовий зв’язок. Повний вперед.
                     </div>
                 </div>
                <div class="tabcontent">
-                    <img src="img/tabs/iwatch.png" alt="iwatch">
+                    <a href="https://www.apple.com/ge/apple-watch-series-6/" target="_blank"><img src="img/tabs/iwatch.png" alt="iwatch"></a>
                     <div class="tabcontent__descr">
                         Вимірюйте рівень кисню в крові за допомогою
 приголомшливого датчика й спеціального додатка. Переглядайте показники тренувань на покращеному, завжди ввімкненому дисплеї Retina. Коли у вас Apple Watch Series 6, набагато простіше вести здоровий спосіб життя, бути активнішими й залишатися на зв’язку.
-
-
                     </div>
                 </div>
                 <div class="tabcontent">
-                    <img src="img/tabs/Macbook.png" alt="macbook">
+                    <a href="https://www.apple.com/shop/buy-mac/macbook-pro/16-inch" target="_blank"><img src="img/tabs/Macbook.png" alt="macbook"></a>
                     <div class="tabcontent__descr">
                         MacBook Pro 16 дюймів — найпотужніший серед наших ноутбуків, створений для професіоналів, що змінюють світ. Імерсивний дисплей Retina, надшвидкісні процесори, відеокарта нового покоління, найбільша ємність акумулятора серед усіх ноутбуків MacBook Pro
                     </div>
@@ -77,19 +75,19 @@
         <div class="container">
 
             <div class="promotion__timer">
-                <div class="title"> До распродажи осталось: </div>
+                <div class="title"> До розпродажу залишилось: </div>
                 <div class="timer">
                     <div class="timer__block">
                         <span id="days">---</span>
-                        дней
+                        днів
                     </div>
                     <div class="timer__block">
                         <span id="hours">---</span>
-                        часов
+                        годин
                     </div>
                     <div class="timer__block">
                         <span id="minutes">---</span>
-                        минут
+                        хвилин
                     </div>
                     <div class="timer__block">
                         <span id="seconds">---</span>
@@ -102,50 +100,9 @@
     <div class="divider"></div>
     <div class="menu__field">
         <div class="title" style="text-align: center;
-    margin-bottom: 5em;"> Товары участвующие в акции: </div>
+    margin-bottom: 5em;"> Товари, які беруть участь в акції: </div>
         <div class="container parent">
-<!-- с помощью классов или функций конструкторов,сформировать 3 карточки
-с товарами на стороне  js.После этого,закоментировать в html файле три ниже стоящих дива
-Верстка не должна поломаться. Карточи с товарами должны быть видны
 
-            <div class="menu__item">
-                <div style="color:red;">Акция</div>
-                <img src="img/iphone.jpeg">
-                <h3 class="menu__item-subtitle">Смартфон Apple iPhone 12 128Gb Starlight</h3>
-
-                <div class="menu__item-price">
-                    <div class="menu__item-cost">Цена:</div>
-                    <div class="menu__item-total"><span>30.000</span> грн</div>
-                </div>
-                <div class="header__right-block">
-                    <button class="btn btn_white" style="margin:auto">Купить</button>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div style="color:red;">Акция</div>
-                <img src="img/iwatch.jpeg" alt="elite">
-                <h3 class="menu__item-subtitle">Смарт-часы Apple Watch Series 6 </h3>
-                <div class="menu__item-price">
-                    <div class="menu__item-cost">Цена:</div>
-                    <div class="menu__item-total"><span>12.500</span> грн</div>
-                </div>
-                <div class="header__right-block">
-                    <button class="btn btn_white" style="margin:auto">Купить</button>
-                </div>
-            </div>
-            <div class="menu__item">
-                <div style="color:red;">Акция</div>
-                <img src="img/macbook.jpeg" alt="post">
-                <h3 class="menu__item-subtitle">Ноутбук APPLE MacBook Pro 13" M1 16/250gb </h3>
-
-                <div class="menu__item-price">
-                    <div class="menu__item-cost">Цена:</div>
-                    <div class="menu__item-total"><span>44.300</span> грн</div>
-                </div>
-                <div class="header__right-block">
-                    <button class="btn btn_white" style="margin:auto">Купить</button>
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="modal">
@@ -153,10 +110,10 @@
             <div class="modal__content">
                 <form action="#">
                     <div class="modal__close">&times;</div>
-                    <div class="modal__title">Заказ в один клик</div>
-                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
-                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
-                    <button class="btn btn_dark btn_min">Купить</button>
+                    <div class="modal__title">Залиште контакт, і ми Вам передзвонимо!</div>
+                    <input required placeholder="Ваше ім'я" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефону" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">Підтвердити</button>
                 </form>
             </div>
         </div>
@@ -164,13 +121,13 @@
     <div class="offer__slider">
                 <div class="offer__slider-counter">
                     <div class="offer__slider-prev">
-                        <img src="https://pngset.com/images/slider-arrow-indian-coin-icon-number-symbol-text-recycling-symbol-transparent-png-1459935.png" alt="prev" width="75">
+                        <img src="./icons/icons8-back-to-100.png" alt="prev" width="75">
                     </div>
                     <span id="current"></span>
                     /
                     <span id="total"></span>
                     <div class="offer__slider-next">
-                        <img src="https://cdn0.iconfinder.com/data/icons/common-2/100/icon-22-512.png" alt="next" width="75">
+                        <img src="./icons/icons8-next-page-100.png" alt="next" width="75">
                     </div>
                 </div>
                 <div class="offer__slider-wrapper">
