@@ -3,7 +3,6 @@ function closeModal(modalSelector) {
     const modal=document.querySelector(modalSelector)
     modal.classList.remove('open')
     modal.classList.add('close')
-
 }
 function openModal(modalSelector,modalTimerId) {
     const modal=document.querySelector(modalSelector)
@@ -20,7 +19,6 @@ function modal(triggerSelector,modalSelector,crossSelector,modalTimerId){
 
     Array.from(btnWhite).forEach(function(item) {
         item.addEventListener('click', () => {
-            console.log(item)
             openModal(modalSelector,modalTimerId) 
         })
     });

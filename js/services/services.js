@@ -13,10 +13,10 @@ const postData = async (url,data)=>{
 }
 
 const getData = async (url)=>{
+    const res = await fetch(url)
     if(!res.ok){
         throw new Error(`Error ${url}`)
     }
-    const res = await fetch(url)
     return await res.json()
 }
 export{postData}
