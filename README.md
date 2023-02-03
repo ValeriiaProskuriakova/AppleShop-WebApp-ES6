@@ -24,3 +24,20 @@ Consists of 6 modules: <br />
           - calculates the difference between Sales date and today (Difference function)  <br />
           - adds zero if the number is less then 10 <br />
           - updates every seconds and displays the remaining days, hours, minutes and seconds to the sale date. 
+
+## Usage
+
+[Click here to check out the website](https://valeriiaproskuriakova.github.io/AppleShop-WebApp-ES6/)
+
+To see the product cards and post the form data, install npm:
+
+```bash
+npm install
+```
+and then run the json server :
+
+```bash
+npx json-server db.json
+```
+
+Further, I will deploy the server on vercel.
