@@ -1,11 +1,11 @@
-# AppleShop-WebApp-ES6
-Landing page built with JavaScript ES6 <br />
-JavaScript modules are compiled with Webpack <br />
-For development purposes MAMP is used as a local server environment <br />
+# Web Application built with JavaScript - copy of the online Apple Shop
+ES6 features like modules, arrow functions, fetch request etc are used <br />
+Modules are compiled with Webpack <br />
+Json-server is used for API requests <br />
 
 Consists of 6 modules: <br />
-  1. Cards module containing a fucnction with: <br />
-          - Card class which dynamically forms product cards based on the database we created db.json <br />
+  1. Cards module containing a function with: <br />
+          - Card class which dynamically forms product cards based on the database db.json <br />
           - Asyncronous request to the db.json database which parses json data to JS format and creates new product card based on the recieved data  <br />
   3. Forms module containing:  <br />
           - Forms function which finds a form, creates resulting messages, and asynchronous fetch request to the server in order to send data from the form to db.json database <br /> 
@@ -40,4 +40,4 @@ and then run the json server :
 npx json-server db.json
 ```
 
-Further, I will deploy the server on vercel.
+Further, I will deploy the server on Vercel.
