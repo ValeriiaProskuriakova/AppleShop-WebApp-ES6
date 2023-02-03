@@ -1,20 +1,15 @@
 import {closeModal} from './modal';
 import{postData} from '../services/services'
 
-
 function forms(formSelector){
     let forma = document.querySelector(formSelector);
-
     const message = {
         loading: './img/spinner.svg',
         success: 'Спасибо, ваша форма отправлена, мы с вами свяжемся',
         error:'Что-то пошло не так...',
     }
 
-
     /* -----end ----*/
-
-
 
     function BindPostData (form) {
         form.addEventListener('submit', (e) => {
@@ -29,7 +24,7 @@ function forms(formSelector){
             formArr.forEach((item, i) => {
                 obj[i] = item
             })
-            postData('http://localhost:3000/requests', JSON.stringify(obj))
+            postData('http://localhost:8000/requests', JSON.stringify(obj))
                 .then(()=>{
                     ShowThanksModal(message.success)
                 }).catch(()=> {

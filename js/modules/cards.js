@@ -2,7 +2,7 @@ import{getData,url} from '../services/services'
 import {openModal} from'./modal'
 function cards(){
     class Card {
-        constructor(image, subtitle, total, parentSelector,...classes) { //принимает параметри при создании єкземпляра обьекта
+        constructor(image, subtitle, total, parentSelector,...classes) { 
             this.image = image;
             this.subtitle = subtitle;
             this.total = total;
@@ -33,19 +33,14 @@ function cards(){
                       </div>`
             this.parentSelector.append(elem)
         }
-
     }
-
-    /* получение данних с сервера */
 
     /* -----end ----*/
 
-//создали запрос на базу данних и розпарсили полученное в формат JS
     getData(url)
-        .then (data=> {data.forEach(({image, subtitle, total})=>{  //object item деструктурізіровали сразу
+        .then (data=> {data.forEach(({image, subtitle, total})=>{  
             new Card(image, subtitle, total, '.parent').createCard()
         })
         })
-
 }
 export default cards;

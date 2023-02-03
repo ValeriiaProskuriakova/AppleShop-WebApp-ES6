@@ -1,7 +1,7 @@
 
-const url="http://localhost:3000/card"
+const url="http://localhost:8000/card"
 
-const postData = async (url,data)=>{  //async - потому что отправка данних на сервер занимает время, и не успев получить ответ, js определіт res как undefined
+const postData = async (url,data)=>{  
     const res = await fetch(url, {
         method:'POST',
         headers: {
@@ -9,7 +9,7 @@ const postData = async (url,data)=>{  //async - потому что отправ
         },
         body: data
     })
-    return await res.json()  //parses json response into javascript object
+    return await res.json()  
 }
 
 const getData = async (url)=>{
