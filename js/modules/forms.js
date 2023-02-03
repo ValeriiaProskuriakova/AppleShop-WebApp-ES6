@@ -42,10 +42,16 @@ function forms(formSelector){
         const thanksModal = document.createElement('div')
         thanksModal.classList.add('modal__dialog')
         thanksModal.innerHTML=`<div class="modal__content">
-                                  <div class="modal__close" onclick="closeModal()">&times;</div>
+                                  <div class="modal__close">&times;</div>
                                   <div class="modal__title">${message}</div>
                           </div>`
         document.querySelector('.modal').append(thanksModal)
+        document.addEventListener("click", function(e){
+            const target = e.target.closest(".modal__close"); // Or any other selector.
+            if(target){
+                closeModal('.modal')
+            }
+          });
         setTimeout(() => {
             thanksModal.remove()
             prevModalDialog.classList.add('open')
