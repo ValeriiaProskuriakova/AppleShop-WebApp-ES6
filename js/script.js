@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded',()=>{
   cards();
   tabs('.tabheader__items','.tabheader__item','.tabcontent');
   timer('2023-10-01');
-  
   modal('btn_white','.modal','.modal__close',modalTimerId);
   forms('form');
   slider({
@@ -27,6 +26,4 @@ window.addEventListener('DOMContentLoaded',()=>{
     wrapper:'.offer__slider-wrapper',
     slide_fild:'.slides_f'
   });
-
-
 })

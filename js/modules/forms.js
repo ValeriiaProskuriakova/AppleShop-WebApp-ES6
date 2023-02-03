@@ -5,8 +5,8 @@ function forms(formSelector){
     let forma = document.querySelector(formSelector);
     const message = {
         loading: './img/spinner.svg',
-        success: 'Спасибо, ваша форма отправлена, мы с вами свяжемся',
-        error:'Что-то пошло не так...',
+        success: 'Дякуємо, вашу форму відправлено, чекайте на дзвінок',
+        error:'Щось пішло не так...',
     }
 
     /* -----end ----*/
@@ -24,7 +24,7 @@ function forms(formSelector){
             formArr.forEach((item, i) => {
                 obj[i] = item
             })
-            postData('http://localhost:8000/requests', JSON.stringify(obj))
+            postData('http://localhost:3000/requests', JSON.stringify(obj))
                 .then(()=>{
                     ShowThanksModal(message.success)
                 }).catch(()=> {
