@@ -33,3 +33,9 @@ To post the form data to the server, and see 'thank you message', click on the b
 \
 \
 ![screenshot-request-button](/img/Screenshot_request.png?raw=true) 
+\
+\
+or on one of the 'Купити' buttons:
+\
+\
+![screenshot-request-button](/img/Screenshot_buy.png?raw=true) 
