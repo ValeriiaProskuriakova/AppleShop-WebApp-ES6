@@ -13,15 +13,18 @@ function openModal(modalSelector,modalTimerId) {
     }
 }
 function modal(triggerSelector,modalSelector,crossSelector,modalTimerId){
-    let btnWhite = document.getElementsByClassName(triggerSelector);
+    let btnRequest = document.querySelector('.'+ triggerSelector);
+    let cardBtnsContainer = document.querySelector('.parent')
     let modal = document.querySelector(modalSelector);
-    let cross = document.querySelector(crossSelector)
-
-    Array.from(btnWhite).forEach(function(item) {
-        item.addEventListener('click', () => {
+    let cross = document.querySelector(crossSelector);
+    btnRequest.addEventListener('click', () => {
             openModal(modalSelector,modalTimerId) 
-        })
     });
+    cardBtnsContainer.addEventListener('click', (e) => {
+        if(e.target.classList.contains('btn_white')) {
+            openModal(modalSelector,modalTimerId)
+        }
+    })
     cross.addEventListener('click', () => {
         closeModal(modalSelector)
     })
