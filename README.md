@@ -32,4 +32,4 @@ Consists of 6 modules: <br />
 To post the form data to the server, and see 'thank you message', click on the button 'Запит на дзвінок':
 \
 \
-![screenshot-request-button](/img/Screenshot_request.jpg?raw=true) 
+![screenshot-request-button](/img/Screenshot_request.png?raw=true) 
