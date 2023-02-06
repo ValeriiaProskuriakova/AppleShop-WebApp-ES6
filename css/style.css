@@ -76,7 +76,7 @@ a {
 .header__left-block {
     display: flex;
     justify-content: space-between;
-    min-width: 570px
+    min-width: 478px
 }
 
 .header__logo {

@@ -1,5 +1,5 @@
 
-const url="http://localhost:3000/card"
+const url="https://apple-shop-web-app-es-6-4n5w51yu0-valeriiaproskuriakova.vercel.app/card"
 
 const postData = async (url,data)=>{  
     const res = await fetch(url, {

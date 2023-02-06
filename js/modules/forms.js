@@ -24,7 +24,7 @@ function forms(formSelector){
             formArr.forEach((item, i) => {
                 obj[i] = item
             })
-            postData('http://localhost:3000/requests', JSON.stringify(obj))
+            postData('https://apple-shop-web-app-es-6-4n5w51yu0-valeriiaproskuriakova.vercel.app/requests', JSON.stringify(obj))
                 .then(()=>{
                     ShowThanksModal(message.success)
                 }).catch(()=> {
