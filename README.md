@@ -1,7 +1,7 @@
 # Web Application built with JavaScript - copy of the online Apple Shop
 ES6 features like modules, arrow functions, fetch request etc are used <br />
 Modules are compiled with Webpack <br />
-Json-server is used for API requests <br />
+Json-server deployed to Vercel is used for API requests <br />
 
 Consists of 6 modules: <br />
   1. Cards module containing a function with: <br />
@@ -29,15 +29,7 @@ Consists of 6 modules: <br />
 
 [Click here to check out the website](https://valeriiaproskuriakova.github.io/AppleShop-WebApp-ES6/)
 
-To see the product cards and post the form data, install npm:
-
-```bash
-npm install
-```
-and then run the json server :
-
-```bash
-npx json-server db.json
-```
-
-Further, I will deploy the server on Vercel.
+To post the form data to the server, and see 'thank you message', click on the button 'Запит на дзвінок':
+\
+\
+![screenshot-request-button](/img/Screenshot_request.jpg?raw=true) 
